@@ -1,0 +1,12 @@
+{"plugins": [{
+    "name": "auto-pairs",
+    "location": "https://github.com/jiangmiao/auto-pairs",
+    "version": "v2.0.0"
+
+},
+{
+    "name": "auto-pairs",
+    "location": "https://github.com/jiangmiao/auto-pairs"
+
+}
+]}
