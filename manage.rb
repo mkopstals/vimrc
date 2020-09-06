@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require "json"
 require "git"
 
@@ -12,15 +15,14 @@ def read_and_parse_json
   return packages
 end
 
-
-
-def check_package(package)
-  puts package["name"]
-  puts File.directory?(File.join(PLUGIN_DIR, package["name"]))
-end
-
-    
 j = read_and_parse_json()
-for i in j do
-  check_package(i)
+for package in j do
+  path = File.join(PLUGIN_DIR, package["name"])
+  g = Git.open(path)
+  current_v = g.describe('HEAD', {:tags => true})
+  if Gem::Version.new(current_v.tr('v', '')) != Gem::Version.new(package['version'].tr('v', ''))
+    new_dir = g.checkout('tags/%s' % i['version'])
+  end
+  
+
 end
