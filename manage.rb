@@ -15,14 +15,19 @@ def read_and_parse_json
   return packages
 end
 
+def strip_v(version)
+  return version.tr('v', '')
+end
+
 j = read_and_parse_json()
 for package in j do
   path = File.join(PLUGIN_DIR, package["name"])
+  puts path
   g = Git.open(path)
-  current_v = g.describe('HEAD', {:tags => true})
-  if Gem::Version.new(current_v.tr('v', '')) != Gem::Version.new(package['version'].tr('v', ''))
-    new_dir = g.checkout('tags/%s' % i['version'])
+  current_tags = g.describe('HEAD', {:tags => true})
+  current_v = strip_v(current_tags) 
+  specified_v = strip_v(package['version'])
+  if Gem::Version.new(current_v) != Gem::Version.new(specified_v)
+    g.checkout('tags/%s' % package['version'])
   end
-  
-
 end
