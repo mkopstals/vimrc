@@ -1,7 +1,198 @@
-{"plugins": [{
-    "name": "auto-pairs",
-    "location": "https://github.com/jiangmiao/auto-pairs",
-    "version": "v2.0.0"
-
+{
+    "plugins": [
+        {
+            "location": "https://github.com/jiangmiao/auto-pairs",
+            "name": "auto-pairs",
+            "version": "v2.0.0"
+        },
+        {
+            "location": "https://github.com/dense-analysis/ale",
+            "name": "ale",
+            "version": "v2.7.0"
+        },
+        {
+            "location": "https://githhub.com/maxbrunsfeld/vim-yankstack",
+            "name": "vim-yankstack"
+        },
+        {
+            "location": "https://github.com/mileszs/ack.vim",
+            "name": "ack.vim",
+            "version": "v1.0.9"
+        },
+        {
+            "location": "https://github.com/jlanzarotta/bufexplorer",
+            "name": "bufexplorer",
+            "version": "v7.4.21"
+        },
+        {
+            "location": "https://github.com/ctrlpvim/ctrlp.vim",
+            "name": "ctrlp.vim",
+            "version": "1.80"
+        },
+        {
+            "location": "https://github.com/vim-scripts/mayansmoke",
+            "name": "mayansmoke",
+            "version": "2.0"
+        },
+        {
+            "location": "https://github.com/scrooloose/nerdtree",
+            "name": "nerdtree",
+            "version": "6.9.9" 
+        },
+        {
+            "location":"https://github.com/chr4/nginx.vim",
+            "name": "nginx",
+            "version": "v1.1.0"
+        },
+        {
+            "location": "https://github.com/amix/open_file_under_cursor.vim",
+            "name": "open_file_under_cursor",
+        },
+        {
+            "location": "https://github.com/vim-scripts/tlib",
+            "name": "tlib",
+            "version": "1.17"
+        },
+        {
+            "location": "https://github.com/MarcWeber/vim-addon-mw-utils",
+            "name": "vim-addon-mw-utils"
+        },
+        {
+            "location": "https://github.com/sophacles/vim-bundle-mako",
+            "name": "vim-bundle-mako",
+        },
+        {
+            "location": "https://github.com/kchmck/vim-coffee-script",
+            "name": "vim-coffee-script",
+            "version": "v003"
+        },
+        {
+            "location": "https://github.com/altercation/vim-colors-solarized",
+            "name": "vim-colors-solarized",
+        },
+        {
+            "location": "https://github.com/michaeljsmith/vim-indent-object",
+            "name": "vim-indent-object",
+            "version": "1.1.2"
+        },
+        {
+            "location": "https://github.com/groenewege/vim-less",
+            "name": "vim-less"
+        },
+        {
+            "location": "https://github.com/therubymug/vim-pyte",
+            "name": "vim-pyte"
+        },
+        {
+            "location": "https://github.com/garbas/vim-snipmate",
+            "name": "vim-snipmate",
+            "version": "v0.87"
+        },
+        {
+            "location": "https://github.com/honza/vim-snippets",
+            "name": "vim-snippets",
+            "version": "1.0.0"
+        },
+        {
+            "location": "https://github.com/tpope/vim-surround",
+            "name": "vim-surround",
+            "version": "v2.1"
+        },
+        {
+            "location": "https://github.com/terryma/vim-expand-region",
+            "name": "vim-expand-region",
+            "version": "v1.2"
+        },
+        {
+            "location": "https://github.com/terryma/vim-multiple-cursors",
+            "name": "vim-multiple-cursors",
+            "version": "v2.2"
+        },
+        {
+            "location": "https://github.com/tpope/vim-fugitive",
+            "name": "vim-fugitive",
+            "version": "v3.2"
+        },
+        {
+            "location": "https://github.com/junegunn/goyo.vim",
+            "name": "goyo-vim",
+            "version": "1.6.0"
+        },
+        {
+            "location": "https://github.com/amix/vim-zenroom2",
+            "name": "vim-zenroom2"
+        },
+        {
+            "location": "https://github.com/tpope/vim-repeat",
+            "name": "vim-repeat",
+            "version": "v1.2"
+       },
+       {
+           "location": "https://github.com/tpope/vim-commentary",
+           "name": "vim-commentary",
+           "version": "v1.3"
+       },
+       {
+           "location": "https://github.com/airblade/vim-gitgutter",
+           "name": "vim-gitgutter"
+       },
+       {
+           "location": "https://github.com/morhetz/gruvbox",
+           "name": "gruvbox",
+           "version": "v2.0.0"
+       },
+       {
+           "location": "https://github.com/nvie/vim-flake8",
+           "name": "vim-flake8",
+           "version": "1.6"
+       },
+       {
+           "location": "https://github.com/digitaltoad/vim-pug",
+           "name": "vim-pug"
+       },
+       {
+           "location": "https://github.com/itchyny/lightline.vim",
+           "name": "lightline"
+       },
+       { 
+           "location": "https://github.com/maximbaz/lightline-ale",
+           "name": "lightline-ale"
+       },
+       {
+           "location": "https://github.com/tpope/tpope-vim-abolish",
+           "name": "tpope-vim-abolish",
+           "version": "v1.1"
+       },
+       {
+           "location": "https://github.com/rust-lang/rust.vim",
+           "name": "rust.vim"
+      },
+      {
+          "location": "https://github.com/plasticboy/vim-markdown",
+          "name": "vim-markdown",
+          "version": "2.0.0"
+     },
+     {
+         "location": "https://github.com/mattn/vim-gist",
+         "name": "vim-gist",
+         "version": "7.3"
+     },
+     {
+         "location": "https://github.com/vim-ruby/vim-ruby",
+         "name": "vim-ruby"
+     },
+     {
+         "location": "https://github.com/leafgarland/typescript-vim",
+         "name": "typescript-vim"
+     },
+     {
+         "location": "https://github.com/pangloss/vim-javascript",
+         "name": "vim-javascript",
+         "version": "1.2.5.1"
+     },
+     {
+         "location": "https://github.com/Vimjas/vim-python-pep8-indent",
+         "name": "vim-python-pep8-indent"
+     }   
+    ]
 }
-]}
