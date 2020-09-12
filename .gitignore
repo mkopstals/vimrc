@@ -7,4 +7,4 @@ sources_non_forked/ctrlp.vim/doc/tags*
 my_plugins/
 tags
 .DS_Store
-sources_non_forked
+sources_non_forked/*
