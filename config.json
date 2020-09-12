@@ -11,7 +11,7 @@
             "version": "v2.7.0"
         },
         {
-            "location": "https://githhub.com/maxbrunsfeld/vim-yankstack",
+            "location": "https://github.com/maxbrunsfeld/vim-yankstack",
             "name": "vim-yankstack"
         },
         {
@@ -46,7 +46,7 @@
         },
         {
             "location": "https://github.com/amix/open_file_under_cursor.vim",
-            "name": "open_file_under_cursor",
+            "name": "open_file_under_cursor"
         },
         {
             "location": "https://github.com/vim-scripts/tlib",
@@ -59,7 +59,7 @@
         },
         {
             "location": "https://github.com/sophacles/vim-bundle-mako",
-            "name": "vim-bundle-mako",
+            "name": "vim-bundle-mako"
         },
         {
             "location": "https://github.com/kchmck/vim-coffee-script",
@@ -68,7 +68,7 @@
         },
         {
             "location": "https://github.com/altercation/vim-colors-solarized",
-            "name": "vim-colors-solarized",
+            "name": "vim-colors-solarized"
         },
         {
             "location": "https://github.com/michaeljsmith/vim-indent-object",

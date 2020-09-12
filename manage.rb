@@ -23,11 +23,26 @@ j = read_and_parse_json()
 for package in j do
   path = File.join(PLUGIN_DIR, package["name"])
   puts path
-  g = Git.open(path)
-  current_tags = g.describe('HEAD', {:tags => true})
-  current_v = strip_v(current_tags) 
-  specified_v = strip_v(package['version'])
-  if Gem::Version.new(current_v) != Gem::Version.new(specified_v)
-    g.checkout('tags/%s' % package['version'])
+  puts package
+  begin
+    g = Git.open(path)
+    current_tags = g.describe('HEAD', {:tags => true})
+    current_v = strip_v(current_tags) 
+    if package.key?("version")
+      puts "has version"
+      specified_v = strip_v(package['version'])
+      checkout_str = 'tags/%s' % specified_v
+      if Gem::Version.new(current_v) != Gem::Version.new(specified_v)
+        g.checkout(checkout_str)
+      end
+    end
+  rescue
+    g = Git.clone(package['location'], path)
+    if package.key?("version")
+      checkout_str = 'tags/%s' % package['version']
+    else
+      checkout_str = 'master'
+      g.checkout(checkout_str)
+    end
   end
 end
