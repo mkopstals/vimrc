@@ -8,7 +8,9 @@ my_plugins/
 tags
 .DS_Store
 sources_non_forked/*
+sources_forked
 node_modules
 package-lock.json
 vendor
 .bundle
+bootstrap.sh
