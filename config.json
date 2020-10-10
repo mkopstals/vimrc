@@ -193,6 +193,11 @@
      {
          "location": "https://github.com/Vimjas/vim-python-pep8-indent",
          "name": "vim-python-pep8-indent"
-     }   
+     },
+     {
+         "location": "https://github.com/vim-scripts/peaksea",
+         "name": "peaksea",
+         "version": "3.5"
+     }
     ]
 }
