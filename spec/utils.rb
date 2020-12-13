@@ -10,6 +10,10 @@ module Utils
     g.commit('mock_commit')
   end
 
+  def open_source_repo(path)
+    return Git.open(path)
+  end
+
   def tag_repo(path, tag)
     puts(path)
     g = Git.open(path)

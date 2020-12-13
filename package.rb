@@ -1,4 +1,4 @@
-class Package
+class GitPackage
   def initialize(name, path, config)
     @path = path
     @name = name
@@ -12,8 +12,13 @@ class Package
 
   def version()
     vimv = File.join(@path, '.vimv')
-    dist_info = File.open(vimv)
+    dist_info = File.open(vimv).read
     return dist_info
+  end
+
+  def remote_head()
+    puts Git.ls_remote(@remote_path)
+    return Git.ls_remote(@remote_path)["head"][:sha]
   end
 
   def open()
@@ -50,8 +55,6 @@ class Package
     vimv = File.join(@path, '.vimv')
     File.write(vimv, checkout_info)
   end
-
-
 end
 
 
