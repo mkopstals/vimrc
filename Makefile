@@ -1,0 +1,3 @@
+
+test:
+	bundler exec rspec
