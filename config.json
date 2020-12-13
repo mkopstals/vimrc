@@ -202,6 +202,11 @@
      {
          "location": "https://github.com/elixir-editors/vim-elixir",
          "name": "vim-elixir"
+     },
+     {
+         "location": "https://github.com/voldikss/vim-floaterm",
+         "name": "vim-floaterm"
      }
+ 
     ]
 }

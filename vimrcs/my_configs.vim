@@ -25,4 +25,4 @@ endif
 
 set rtp+=/usr/local/opt/fzf
 
-
+let g:floaterm_keymap_toggle = '<Leader>ft'
