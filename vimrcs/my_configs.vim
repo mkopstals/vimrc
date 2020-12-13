@@ -26,4 +26,3 @@ endif
 set rtp+=/usr/local/opt/fzf
 
 
-let b:ale_fixers = {'python': ['black']}
